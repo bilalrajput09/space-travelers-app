@@ -7,6 +7,7 @@ const MainNavigation = () => (
     <nav className={styles.nav_bar}>
       <div className={styles.img_container}>
         <img src={planet} alt="space-travel-app-logo" />
+        <span>Space Travelers&apos;Hub</span>
       </div>
       <ul className={styles.links_container}>
         <li>
