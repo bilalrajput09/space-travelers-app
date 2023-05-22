@@ -22,6 +22,7 @@ const Rockets = () => {
               name={rocket.name}
               type={rocket.type}
               description={rocket.description}
+              reserved={rocket.reserved}
             />
           </li>
         ))}
