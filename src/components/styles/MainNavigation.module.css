@@ -6,15 +6,21 @@
 }
 
 .header {
-  background-color: antiquewhite;
+  border-bottom: 2px solid black;
+  width: 95%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  padding: 1em;
+  padding: 0.5em 1em;
 }
 
 .img_container {
   display: flex;
   align-items: center;
+}
+
+.img_container span {
+  font-size: 1.5rem;
 }
 
 .img_container img {
@@ -23,6 +29,7 @@
 
 a {
   text-decoration: none;
+  color: rgb(0, 140, 255);
 }
 
 a:hover {
