@@ -25,7 +25,7 @@ function App() {
 
   useEffect(() => {
     dispatch(getAllMission());
-  }, []);
+  }, [dispatch]);
 
   useEffect(() => {
     dispatch(fetchRocketsData());
