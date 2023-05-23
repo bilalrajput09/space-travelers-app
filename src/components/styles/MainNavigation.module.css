@@ -21,6 +21,8 @@
 
 .img_container span {
   font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0 0.5em;
 }
 
 .img_container img {
