@@ -18,7 +18,7 @@ const Missions = () => {
         <th className={styles.mission_header}>Mission</th>
         <th className={styles.description_header}>Description</th>
         <th className={styles.status_header}>Status</th>
-        <th className={styles.join_btn_header} />
+        <th className={styles.join_btn_header}>Join missions</th>
       </tr>
       {missions.map((mission) => (
         <tr key={mission.mission_id}>
