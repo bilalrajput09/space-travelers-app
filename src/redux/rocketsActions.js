@@ -11,6 +11,7 @@ const fetchRocketsData = createAsyncThunk('fetch/rockets', async () => {
     type: obj.rocket_type,
     description: obj.description,
     flickr_image: obj.flickr_images[0],
+    reserved: false,
   }));
 
   return modifiedArray;
