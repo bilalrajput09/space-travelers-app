@@ -7,7 +7,6 @@ import Root from './components/Root';
 import Rockets from './components/Rockets';
 import Missions from './components/Missions';
 import MyProfile from './components/MyProfile';
-import getAllMission from './redux/missions/missionActions';
 
 const router = createBrowserRouter([
   {
@@ -32,9 +31,6 @@ function App() {
     dispatch(fetchRocketsData());
   }, [dispatch]);
 
-  useEffect(() => {
-    dispatch(getAllMission());
-  }, []);
   return <RouterProvider router={router} />;
 }
 
