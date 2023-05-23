@@ -8,7 +8,7 @@
 
 # 📗 Table of Contents
 
-- [📖 Space-Travel-Hub](#about-project)
+- [📖 SpaceX-Space-Tours](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
