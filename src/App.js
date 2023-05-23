@@ -1,4 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import fetchRocketsData from './redux/rocketsActions';
 import Root from './components/Root';
 import Rockets from './components/Rockets';
 import Missions from './components/Missions';
@@ -9,14 +12,19 @@ const router = createBrowserRouter([
     path: '/',
     element: <Root />,
     children: [
-      { path: '/', element: <Rockets /> },
-      { path: '/missions', element: <Missions /> },
-      { path: '/myprofile', element: <MyProfile /> },
+      { index: true, element: <Rockets /> },
+      { path: 'missions', element: <Missions /> },
+      { path: 'myprofile', element: <MyProfile /> },
     ],
   },
 ]);
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchRocketsData());
+  }, [dispatch]);
   return <RouterProvider router={router} />;
 }
 
