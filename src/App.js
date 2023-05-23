@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import fetchRocketsData from './redux/rocketsActions';
+import getAllMission from './redux/missions/missionActions';
 import Root from './components/Root';
 import Rockets from './components/Rockets';
 import Missions from './components/Missions';
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
 
 function App() {
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getAllMission());
+  }, []);
 
   useEffect(() => {
     dispatch(fetchRocketsData());
