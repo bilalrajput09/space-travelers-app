@@ -8,7 +8,6 @@ const getAllMission = createAsyncThunk('mission/getMissions',
       const response = await fetch(url);
       const dataArray = [];
       const data = await response.json();
-
       data.map((item) => dataArray.push({
         mission_id: item.mission_id,
         mission_name: item.mission_name,
