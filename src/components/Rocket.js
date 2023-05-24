@@ -16,8 +16,12 @@ const Rocket = (props) => {
         </div>
         <div className={styles.rocket_details_container}>
           <h1>{name}</h1>
-          {reserved && <span>Reserved</span>}
-          <p>{description}</p>
+
+          <p>
+            {' '}
+            {reserved && <span>Reserved</span>}
+            {description}
+          </p>
           <button
             className={reserved ? styles.reserved : styles.not_reserved}
             type="button"
