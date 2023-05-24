@@ -1,0 +1,31 @@
+.profile_main_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.my_rockets_main_container,
+.my_missions_main_container {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 10px;
+}
+
+.my_rockets_main_container header,
+.my_missions_main_container header {
+  font-size: 2rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.list li {
+  border: 2px solid rgb(126, 122, 122);
+  padding: 0.5em 0.2em;
+}
